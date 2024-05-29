@@ -1,0 +1,19 @@
+<script>
+window.onload = function() {
+    setTimeout(func, 2000);
+};
+
+function func() {
+    console.log("Hello !!");
+
+    var htmlContainer = document.getElementsByClassName('mstrmojo-Button mstrmojo-EditButton')[0];
+
+    if (htmlContainer) {
+        htmlContainer.click();
+        console.log(htmlContainer);
+        console.log("Button is clicked");
+    } else {
+        console.log("Button not found");
+    }
+}
+</script>
